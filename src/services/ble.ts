@@ -7,7 +7,7 @@ const CHARACTERISTIC_UUID = '19b10001-e8f2-537e-4f6c-d104768a1214';
 
 let manager: BleManager | null = null;
 
-const getManager = (): BleManager | null => {
+export const getManager = (): BleManager | null => {
   if (!manager) {
     try {
       manager = new BleManager();
