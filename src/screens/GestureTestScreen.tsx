@@ -67,7 +67,7 @@ export const GestureTestScreen: React.FC<Props> = ({ navigation, route }) => {
         gestureNumber: gestureNumber + 1,
       });
     } else {
-      navigation.replace('SetupDone');
+      navigation.replace('Permissions');
     }
   };
 

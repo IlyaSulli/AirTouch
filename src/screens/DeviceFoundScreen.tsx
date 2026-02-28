@@ -3,7 +3,8 @@ import { View, Text, StyleSheet } from 'react-native';
 import { NativeStackScreenProps } from '@react-navigation/native-stack';
 import { OnboardingLayout } from '../components/OnboardingLayout';
 import { NeumorphicButton } from '../components/NeumorphicButton';
-import { storeDevice } from '../services/storage';
+import { storeDevice, storeShortcuts } from '../services/storage';
+import { DEFAULT_SHORTCUTS } from '../types/shortcuts';
 import { COLORS, FONTS, scale, verticalScale } from '../constants/theme';
 import { RootStackParamList } from '../navigation/types';
 
@@ -14,6 +15,8 @@ export const DeviceFoundScreen: React.FC<Props> = ({ navigation, route }) => {
 
   const handleYep = async () => {
     await storeDevice({ id: deviceId, name: deviceName });
+    // Reset shortcuts to empty when pairing a new device
+    await storeShortcuts(DEFAULT_SHORTCUTS);
     navigation.replace('Connected', { deviceId, deviceName });
   };
 

@@ -6,6 +6,7 @@ import { DeviceFoundScreen } from '../screens/DeviceFoundScreen';
 import { ConnectedScreen } from '../screens/ConnectedScreen';
 import { GestureIntroScreen } from '../screens/GestureIntroScreen';
 import { GestureTestScreen } from '../screens/GestureTestScreen';
+import { PermissionsScreen } from '../screens/PermissionsScreen';
 import { SetupDoneScreen } from '../screens/SetupDoneScreen';
 import { HomeScreen } from '../screens/HomeScreen';
 import { RootStackParamList } from './types';
@@ -34,6 +35,7 @@ export const AppNavigator: React.FC = () => {
       <Stack.Screen name="Connected" component={ConnectedScreen} />
       <Stack.Screen name="GestureIntro" component={GestureIntroScreen} />
       <Stack.Screen name="GestureTest" component={GestureTestScreen} />
+      <Stack.Screen name="Permissions" component={PermissionsScreen} />
       <Stack.Screen name="SetupDone" component={SetupDoneScreen} />
       <Stack.Screen name="Home" component={HomeScreen} />
     </Stack.Navigator>

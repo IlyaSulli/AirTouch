@@ -18,6 +18,7 @@ export type RootStackParamList = {
     deviceName: string;
     gestureNumber: number;
   };
+  Permissions: undefined;
   SetupDone: undefined;
   Home: undefined;
 };
