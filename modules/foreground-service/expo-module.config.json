@@ -1,0 +1,11 @@
+{
+  "name": "expo-foreground-service",
+  "version": "1.0.0",
+  "main": "index.ts",
+  "platforms": ["android"],
+  "android": {
+    "modules": [
+      "expo.modules.foregroundservice.ForegroundServiceModule"
+    ]
+  }
+}

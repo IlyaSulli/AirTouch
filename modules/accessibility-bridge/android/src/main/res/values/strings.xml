@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="accessibility_service_description">Shortcut Air uses this service to perform gestures (swipes), toggle system settings, and lock your screen when triggered by your Arduino device.</string>
+</resources>
